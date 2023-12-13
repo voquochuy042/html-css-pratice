@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    /* font-size: 26px; */
+}
+#wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #F0FFC2;
+}
+.yoko{
+    font-size: 30px;
+
+}
+.jpan{
+    font-size: 30px;
+}
+.M{
+    background: #C5D8A4;
+}
+body{
+    background: #EEEEEE;
+}
+.Menu{
+    display: flex;
+    box-shadow:0px 1px 2px 0px #151d3b;
+    margin-top: 10px;
+}
+#header{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.Menu li{
+    
+    list-style: none;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #C5D8A4;
+    text-align: center;
+}
+.Menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    width: 100%;
+    display: inline-block;
+    font-weight: 800;
+}
+.Menu a:hover{
+    color: #151D3B;
+    background:#DFF6FF;
+    
+}
+#wp-content{
+    display: flex;
+    /* min-height: 500px; */
+    
+}
+#content{
+    flex-basis: 70%;
+}
+#sidebar{
+    flex-basis: 30%;
+    background: #FFF1CE;
+    margin-top: 5px;
+}
+.bok-choi{
+    display: flex;
+    margin-top: 20px;
+}
+.text{
+    margin-left: 20px;
+    width: 300px;
+    
+}
+.subtext{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+h2{
+    
+}
+img{
+    width: 300px;
+    
+}
+.popular-recipes {
+    
+}
+.list-popular-recipes{
+    display: flex;
+    flex-direction:column;
+}
+.list-popular-recipes li{
+    list-style: none;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    background: #B4CFB0;
+    text-align: center;
+   
+}
+.list-popular-recipes a{
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;    
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* background-color: #151D3B; */
+    
+    
+}
+.list-popular-recipes a:hover{
+    background: #D18CE0;
+    color: black;
+    
+}
+
+
+.contact{
+    font-size: 24px;
+}
+#footer{
+    background-color: #789395;
+    bottom: 0;
+    /* position: fixed; */
+    width: 960px;
+    height: 40px;
+    /* text-align: center; */
+    text-align: left;
+}

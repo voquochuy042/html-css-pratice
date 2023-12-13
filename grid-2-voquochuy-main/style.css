@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*::before ,*::after{
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+body{
+    font-size: 16px;
+    font-family:sans-serif;
+}
+img{
+    display: block;
+    max-width: 100% ;
+}
+
+
+.layout-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 4 column
+tong 800px
+row1 350px
+row2 100px
+row3 350px*/
+.second-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 100px 350px;
+    grid-gap: 20px;
+    padding: 10px;
+    background-image: url(./img/arianna-martinucci-JmZkQNSSgrU-unsplash1.jpg);
+    /* background-color: #00bfbf41; */
+    /* background-image: linear-gradient(red, rgb(17, 69, 104) ); */
+}
+.layout-items{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.layout-items:first-child{
+    /* grid-column: trackline-start /trackline-end; */
+    /* grid-row: trackline-start /trackline-end; */
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.layout-items:nth-child(2),
+.layout-items:nth-child(3){
+    grid-row: 1/3;
+}
+.layout-items:nth-child(4),
+.layout-items:nth-child(5){
+    grid-row: 2/4;
+}
+.layout-items:last-child{
+    grid-column: 3/5;
+}

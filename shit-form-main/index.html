@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@300&family=Quicksand:wght@300&family=Roboto+Condensed:wght@300&family=Smooch+Sans:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h4 style="margin: 30px 0px">FORM ĐĂNG KÝ TÀI KHOẢN</h4>
+
+            <form
+              action=""
+              method=""
+              name="register"
+              onsubmit="return FormValidate();"
+            >
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="name"
+                    >Tên đăng nhập
+                    <span style="color: red" id="errorUserName"
+                      >(*)</span
+                    ></label
+                  >
+                  <input
+                    type="text"
+                    name="username"
+                    class="form-control"
+                    id="username"
+                    onblur="checkUserName();"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <div class="">
+                    <label for="pass"
+                      >Mật khẩu
+                      <span style="color: red" id="errorPass">(*)</span></label
+                    >
+                  </div>
+                  <input
+                    type="password"
+                    name="passw"
+                    class="form-control"
+                    id="pass"
+                    onblur="checkPass();"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <div class="">
+                    <label for="passw"
+                      >Nhập lại mật khẩu
+                      <span style="color: red" id="errorConPass"
+                        >(*)</span
+                      ></label
+                    >
+                  </div>
+                  <input
+                    type="password"
+                    name="con_passw"
+                    class="form-control"
+                    id="passw"
+                    onblur="checkrePass();"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <div class="">
+                    <label for="name"
+                      >Họ tên
+                      <span style="color: red" id="errorName">(*)</span></label
+                    >
+                  </div>
+
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    onblur="checkName();"
+                    value=""
+                    ;
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <div class="">
+                    <label for="phone"
+                      >Phone
+                      <span style="color: red" id="erorPhone">(*)</span></label
+                    >
+                  </div>
+
+                  <input
+                    type="text"
+                    name="phone"
+                    class="form-control"
+                    id="phone"
+                    onblur="checkPhone();"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <div class="">
+                    <label for="email"
+                      >Email
+                      <span style="color: red" id="erorEmail">(*)</span></label
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    value=""
+                    onblur="checkEmail()"
+                  />
+                </div>
+              </div>
+
+              <div class="button">
+                <button type="submit" class="btn btn-primary">
+                  Gửi thông tin
+                </button>
+                <button type="reset" class="btn btn-danger">
+                  Xóa thông tin
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./check.js"></script>
+  </body>
+</html>

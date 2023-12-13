@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+}
+body{
+    background: #C0D8C0;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    background: #fff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #FFBC80;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background: blue;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    justify-content: center;
+    display: inline-block;
+    width: 100%;
+    background: #FFBC80;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+nav a:hover{
+    background: #A1B57D;
+}
+.blue-world{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px red;
+}
+.wrapcontent{
+    display: flex;
+    border-top: 4px dotted #2666CF;
+    border-bottom: 4px dotted #2666CF;
+    height: 600px;
+}
+.left{
+    flex-basis: 55%;
+    background: #FFBC80;
+    
+}
+.gallery{
+    text-align: center;
+    border: 1px #FFBC80 solid;
+    margin: 5px;
+}
+.gallery:hover{
+    border: 1px #FFB solid;
+}
+.right{
+    flex-basis: 45%;
+    background: #E9DAC1;
+}
+img{
+    width: 500px;
+    height: 300px;
+    margin:10px 15px;
+    box-shadow: 2px 2px 4px 1px #333;
+}
+
+.happiness {
+    text-shadow: 4px 2px 2px #fff;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 40px;
+}
+.inspring{
+    margin-left: 40px; 
+    font-size: 24px;
+    text-shadow: 3px 1px 0px #fff;
+}
+.textcontent{
+    margin: 16px 10px 0 10px;
+    border: 1px solid #E3B7A0;
+    padding: 10px;
+    text-align: justify;
+}
+.textcontent:hover{
+    border: 1px solid #FFF;
+}
+form{
+    margin: 20px 10px 0 10px;
+    padding: 20px 0 20px 0;
+    border: 1px solid #E3B7A0;
+}
+form:hover{
+    border: 1px solid #FFF;
+}
+.footer{
+    text-align: center;
+    bottom: 0;
+    background: #E3B7A0;
+}
+textarea{
+    resize: none;
+}

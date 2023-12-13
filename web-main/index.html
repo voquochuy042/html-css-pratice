@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Quicksand:wght@300&family=Smooch+Sans:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Smooch Sans', sans-serif;
+            /* font-size: 30px; */
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border: 10px solid #42C2FF;
+        }
+        .container{
+            background: #EFFFFD;
+        }
+        .header{
+            height: 180px;
+            vertical-align: bottom;
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 0.2rem;
+        }
+        .nav-bar{
+            width: 100%;
+/*          float: left; */
+            display: inline-block;
+            background: #85F4FF;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        .nav-bar ul{
+            background: #85F4FF;
+            list-style: none;
+            text-align: center; 
+        }
+        .nav-bar li{
+            color: #f1f1f1;
+            /* display: inline-block; */
+            float: left;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+
+        }
+        
+        .nav-bar a:hover{
+            background: #fff;
+            color: #0E3EDA;
+            cursor: pointer;
+            
+        }
+        
+        .nav-bar a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 26px;
+            font-weight: bold;
+            display: block;
+            color: #333;
+            
+        }
+        img{
+            width: 100%;
+            height: 350px;
+            
+        }
+        .pic{
+            width: 20%;
+            float: left;
+        }
+        .content::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .content-second{
+            
+            font-size: 24px; 
+        }
+        .content-txt{
+            margin-left: 10px;
+            width: 80%;
+        }
+        .home{
+            font-weight: 900;
+            font-size: 40px;
+            text-transform: uppercase;
+            
+        }
+        @media (max-width: 600px) {
+        nav-bar, .pic {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>example <br /> cafe</h1>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">recipes</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="home">home</div>
+        <div class="content">
+
+            
+
+            <div class="pic">
+                <img src="./cake.jpg" alt="cake">
+            </div>
+            
+            <div class="content-second">
+                <h1><p>Acomunity cafen serving home cooked, locally sourced, organic food</p></h1>
+                <div>
+                  <p class="content-txt">
+                    With stunning views of the ocean. Example Cafe offers the perfect environment to unwind and recharge the batteries.
+                </p>  
+                <p class="content-txt">
+                    Our menu offers a wide range of breakfasts, brunches and lunches, including a range of vegetarian options.
+                </p>
+                <p class="content-txt">Wherther you ship on a fresh, hot coffee or a cooling soothie, yout never need to feel rushed. Relax with friends or just watch the world go by.</p>
+                </div>
+                
+                <h2><p>This weekend's special brunch</p></h2>
+                <p class="content-txt">This weekend, our season of special brunches continues with scraambled eg on an English muffin. Not fot the faint-headrted, the secret to these eggs is that they are made with half cream and cooked in butter, with no more than four eggs in the pang at a time</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
